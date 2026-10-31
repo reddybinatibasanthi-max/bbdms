@@ -14,8 +14,7 @@ PHP (PDO), MySQL/MariaDB, Bootstrap, jQuery, Chart.js, DataTables
 ## Setup
 1. Install a local stack such as XAMPP/WAMP/LAMP (PHP 7.4+ and MySQL).
 2. Copy the project folder into your web root (e.g. `htdocs/bbdms`).
-3. Create a MySQL database named `bbdms` and import the SQL dump (add it to a `database/` folder).
-   The code expects these tables: `tbladmin`, `tblblooddonars`, `tblbloodgroup`, `tblbloodrequirer`, `tblcontactusinfo`, `tblcontactusquery`, `tblpages`.
+3. Import the database: in phpMyAdmin click **Import** and choose `database/bbdms.sql` (it creates the `bbdms` database and all 7 tables with starter data).
 4. Create your config files from the samples:
    ```bash
    cp includes/config.sample.php includes/config.php
@@ -26,4 +25,5 @@ PHP (PDO), MySQL/MariaDB, Bootstrap, jQuery, Chart.js, DataTables
 
 ## Notes
 - `config.php` files are git-ignored so credentials aren't committed.
-- Change any default admin password after importing the database.
+- Default admin login after import: username `admin`, password `Admin@123`. **Change it immediately** (Admin > Change Password).
+- `database/bbdms.sql` was reconstructed from the app's queries, so it contains starter data only (no real donors).
