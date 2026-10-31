@@ -1,0 +1,10 @@
+# Local config with real credentials
+includes/config.php
+admin/includes/config.php
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
